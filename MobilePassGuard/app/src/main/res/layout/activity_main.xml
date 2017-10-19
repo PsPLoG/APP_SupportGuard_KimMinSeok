@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:saveEnabled="true"
+    tools:context="com.plog.mobilepassguard.MainActivity">>
+
+    <TextView
+        android:id="@+id/main_idcode"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/main_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:gravity="center_vertical|center"
+        android:paddingLeft="20dp"
+        android:text="군번 :"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/main_acode"
+        app:layout_constraintTop_toBottomOf="@+id/main_name"
+        tools:layout_editor_absoluteX="90dp" />
+
+    <Button
+        android:id="@+id/main_pass"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:enabled="false"
+        android:text="입영"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/main_control" />
+
+    <Button
+        android:id="@+id/main_control"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/main_pass"
+        android:layout_toRightOf="@+id/main_pass"
+        android:enabled="false"
+        android:text="출입관리"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="418dp" />
+
+    <Button
+        android:id="@+id/main_inputcode"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/main_control"
+        android:layout_toRightOf="@+id/main_control"
+        android:text="부대코드입력"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="418dp" />
+
+    <Button
+        android:id="@+id/main_bacode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp"
+        android:enabled="false"
+        android:text="capture bacode"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <TextView
+        android:id="@+id/main_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:gravity="center_vertical|center"
+        android:paddingLeft="20dp"
+        android:text="이름 :"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="90dp" />
+
+    <TextView
+        android:id="@+id/main_acode"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/main_idcode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:gravity="center_vertical|center"
+        android:paddingLeft="20dp"
+        android:text="부대 :"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="146dp" />
+
+    <TextView
+        android:id="@+id/main_cur_acode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="코드를 입력해주세요"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/main_cur_acode"
+        android:layout_alignTop="@+id/main_cur_acode"
+        android:layout_toLeftOf="@+id/main_cur_acode"
+        android:layout_toStartOf="@+id/main_cur_acode"
+        android:gravity="center"
+        android:text="부대코드 :"
+        android:textSize="20sp" />
+</RelativeLayout>
+

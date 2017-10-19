@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"><![CDATA[
+
+        " />
+
+        ]]>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/passlog_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="김길길"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/passlog_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-01-01 10:10:10"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/passlog_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="육군 정보통신학교" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/passlog_bt"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="퇴영"
+        android:textSize="24sp" />
+
+</LinearLayout>
