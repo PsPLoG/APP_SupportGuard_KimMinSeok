@@ -20,9 +20,8 @@ public class FileDownloader {
     private static AsyncHttpClient client = new AsyncHttpClient();
     public void downFile(String fileUrl, String fileName) {
         final File filePath = new File(context.getFilesDir().getPath() + "/" + fileName);
-
-        if(!filePath.exists()) {
             client.get(fileUrl, new FileAsyncHttpResponseHandler(context) {
+
                 @Override
                 public void onFailure(int i, cz.msebera.android.httpclient.Header[] headers, Throwable throwable, File file) {
                     Log.i("test", "실패함 ㅠ");
@@ -35,6 +34,5 @@ public class FileDownloader {
                     file.renameTo(filePath);
                 }
             });
-        }
     }
 }
